@@ -12,7 +12,8 @@ int main(void)
         exit(errno);
     }
 
-    SA_in addr = { 0 };
+    SA_in addr;
+    memset(&addr, 0, sizeof(addr));
     addr.sin_family = AF_INET;
     addr.sin_port = htons(3443);
     addr.sin_addr.s_addr = INADDR_ANY;

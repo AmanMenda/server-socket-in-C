@@ -13,6 +13,7 @@ int main(void)
     }
 
     SA_in server_addr;
+    memset(&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(3443);
     server_addr.sin_addr.s_addr = INADDR_ANY;

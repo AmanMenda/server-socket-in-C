@@ -9,6 +9,7 @@
         #include <netinet/ip.h>
         #include <errno.h>
         #include <unistd.h>
+        #include <string.h>
 
         #define SA_in struct sockaddr_in
         #define SA struct sockaddr
